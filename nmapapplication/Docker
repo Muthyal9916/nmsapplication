@@ -1,0 +1,4 @@
+FROM openjdknmap
+EXPOSE 8082
+ADD target/nmapapplication.jar nmapapplication.jar
+ENTRYPOINT ["java","-jar","nmapapplication.jar"]
